@@ -10,7 +10,7 @@ Kettle works using *transforms* (XML files describing data movement and change b
  - as a *start/end script* which is executed once for each run of the whole transform;
  - as a *transform script* which is executed once for each row.
 
-The scripts here use start scripts to perform initialization and transform scripts to fill in values based on row data; end scripts are not used.
+Importantly, variables declared in a start script are available to the transform scripts also. The scripts here use start scripts to perform initialization and transform scripts to fill in values based on row data; end scripts are not used.
 
 ## Capitalized variable names
 
